@@ -1,8 +1,8 @@
 {
-  "name": "t4-app-monorepo",
+  "name": "applocate",
   "private": true,
   "license": "MIT",
-  "version": "3.0.0",
+  "version": "1.0.0",
   "scripts": {
     "dev": "run-p api web",
     "ios": "cd apps/expo && bun ios",
