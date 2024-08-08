@@ -3,6 +3,15 @@ compatibility_date = "2023-08-23"
 send_metrics = false
 account_id = "a9e4229fffc596d7229c7efbedd7925f"
 
+[env.dev]
+name = "applocation-dev"
+workers_dev = true
+
+[env.production]
+name = "applocation"
+route = "app.t4stack.com/*"
+workers_dev = false
+
 [[d1_databases]]
 binding = "DATABASE"
 database_name = "applocation-dev-db"
