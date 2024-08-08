@@ -72,3 +72,6 @@ apps/expo/android/**
 **/workbox-*.js
 **/fallback-*.js
 **/service-worker.js
+
+# Bun lock file
+bun.lockb
