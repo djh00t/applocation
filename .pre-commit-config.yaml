@@ -71,7 +71,7 @@ repos:
     hooks:
       - id: forbid-crlf
       - id: remove-crlf
-      - id: forbid-tabs
+      # - id: forbid-tabs
       - id: remove-tabs
 
   - repo: https://github.com/gruntwork-io/pre-commit
