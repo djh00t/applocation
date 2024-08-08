@@ -4,7 +4,7 @@ repos:
     rev: v4.6.0
     hooks:
       - id: check-added-large-files
-        exclude: *.png
+        exclude: '\.png$'
       - id: check-case-conflict
       - id: check-ast
       - id: check-json
