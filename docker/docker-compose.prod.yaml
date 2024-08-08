@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  storage:
+    image: supabase/storage-api:v0.40.4
+    container_name: supabase-storage
+    environment:
+      ANON_KEY: your-super-secret-jwt-token-with-at-least-32-characters-long
+      SERVICE_KEY: your-super-secret-jwt-token-with-at-least-32-characters-long
+      PROJECT_REF: bjwdssmqcnupfcfvdgju
+      POSTGREST_URL: http://rest:3000
+      PGRST_JWT_SECRET: your-super-secret-jwt-token-with-at-least-32-characters-long
+      DATABASE_URL: postgres://postgres:postgres@db:5432/postgres
+      PGREST_URL: http://rest:3000
+      STORAGE_BACKEND: d1
+      FILE_SIZE_LIMIT: 52428800
+      GLOBAL_S3_BUCKET: your-d1-bucket-name
+      REGION: your-d1-region
+      D1_ACCOUNT_ID: your-d1-account-id
+      D1_ACCESS_KEY_ID: your-d1-access-key-id
+      D1_SECRET_ACCESS_KEY: your-d1-secret-access-key
+    depends_on:
+      - db
+      - rest
+
+volumes:
+  db-data:
