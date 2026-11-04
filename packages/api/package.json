@@ -19,9 +19,9 @@
     "@hono/trpc-server": "^0.1.0",
     "@trpc/server": "^10.43.2",
     "@tsndr/cloudflare-worker-jwt": "2.2.7",
-    "drizzle-orm": "^0.29.0",
+    "drizzle-orm": "^0.45.2",
     "drizzle-valibot": "beta",
-    "hono": "^3.9.2",
+    "hono": "^4.12.32",
     "miniflare": "3.20231030.2",
     "superjson": "1.13.3",
     "valibot": "^0.20.1"
